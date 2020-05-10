@@ -90,7 +90,7 @@ int main(void)
       //Behaves the same as printf, but prints to the PSP's debug console
       Json::Value data;
 	  LoadJson("message.json", &data);
-      pspDebugScreenPrintf("%s\n",data.get("message", "Could not load json message!").asString());
+      pspDebugScreenPrintf("%s\n",data.get("message", "Could not load json message!").asString().c_str());
       //Sleeps the thread for 1000000us or 1s
       sceKernelDelayThread(1000000);
     }
