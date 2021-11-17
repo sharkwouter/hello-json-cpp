@@ -26,9 +26,10 @@ add_executable(${PROJECT_NAME}
 
 # Library to link to (drop the -l prefix). This will mostly be stubs.
 target_link_libraries(${PROJECT_NAME}
-  stdc++
   jsoncpp
-  ${PSP_LIBRARIES}
+  pspdebug
+  pspdisplay
+  pspge
 )
 
 create_pbp_file(
