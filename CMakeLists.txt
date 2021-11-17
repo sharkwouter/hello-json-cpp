@@ -38,4 +38,5 @@ create_pbp_file(
     BACKGROUND_PATH NULL
     PREVIEW_PATH NULL
     TITLE Hello-Json
+    BUILD_PRX
 )
