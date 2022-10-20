@@ -40,3 +40,5 @@ create_pbp_file(
     TITLE Hello-Json
     BUILD_PRX
 )
+
+file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/message.json DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
