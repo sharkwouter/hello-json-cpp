@@ -5,10 +5,8 @@ project(hello_world)
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall")
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
-
 include(FindPkgConfig)
 pkg_search_module(JSONCPP REQUIRED jsoncpp)
-
 
 include_directories(
   ${JSONCPP_INCLUDE_DIRS}
